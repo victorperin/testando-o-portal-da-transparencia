@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "GLOBAL_AGENT_SOCKET_CONNECTION_TIMEOUT=60000 node teste.mjs"
+    "start": "GLOBAL_AGENT_SOCKET_CONNECTION_TIMEOUT=60000 node index.mjs"
   },
   "dependencies": {
     "async": "^3.2.0",
