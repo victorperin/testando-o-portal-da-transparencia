@@ -1,7 +1,7 @@
 # Teste de acesso ao Portal da transparencia
 Este código testa o acesso do portal da transparência do brasil em outros países, usando proxies abertos na internet.
 
-O bloqueio para outros países pode limitar o acesso de cidadãos brasileiros vivendo em território extrangeiro, extrangeiros e, consequentemente veículos de mídia extrangeiros.
+O bloqueio para outros países pode limitar o acesso de cidadãos brasileiros vivendo em território estrangeiro, estrangeiros e, consequentemente veículos de mídia estrangeiros.
 
 ## Como rodar
 - clone o projeto em sua maquina;
