@@ -1,7 +1,8 @@
 import got from 'got'
 import { bootstrap } from 'global-agent'
-import getAllProxiesFromCountry from './get-all-proxies-from-contry.mjs'
 import { someLimit, mapSeries } from 'async';
+import { appendFile } from 'fs/promises'
+import getAllProxiesFromCountry from './get-all-proxies-from-contry.mjs'
 
 const PAGE_TO_BE_TESTED = 'http://portaldatransparencia.gov.br/'
 const REQUESTS_TIMEOUT = 60000
@@ -41,6 +42,7 @@ mapSeries(COUNTRIES_LIST, async (country) =>
       const result = {country, isAccessible, numberOfProxies}
 
       console.debug(result)
+      await appendFile('output.txt', result, 'utf-8')
       return result
     })
 )
