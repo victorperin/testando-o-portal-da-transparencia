@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "GLOBAL_AGENT_SOCKET_CONNECTION_TIMEOUT=1000 node teste.mjs"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "async-es": "^3.2.0",
+    "global-agent": "^2.2.0",
+    "got": "^11.8.2",
+    "proxy-lists": "^1.23.2"
+  }
+}
