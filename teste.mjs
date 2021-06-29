@@ -22,17 +22,23 @@ const COUNTRIES_LIST = [
 bootstrap()
 mapSeries(COUNTRIES_LIST, async (country) =>
   getAllProxiesFromCountry(country)
-    .then( (proxies) => someLimit(proxies, MAX_CONCURRENT_REQUESTS, async ({ipAddress, port}) => {
-      global.GLOBAL_AGENT.HTTP_PROXY = `http://${ipAddress}:${port}`
-      console.debug(`trying country ${country}: ${global.GLOBAL_AGENT.HTTP_PROXY}`)
+    .then( (proxies) => {
+      const isAccessible = someLimit(proxies, MAX_CONCURRENT_REQUESTS, async ({ipAddress, port}) => {
+        global.GLOBAL_AGENT.HTTP_PROXY = `http://${ipAddress}:${port}`
+        console.debug(`trying country ${country}: ${global.GLOBAL_AGENT.HTTP_PROXY}`)
 
-      return got(PAGE_TO_BE_TESTED, { timeout: REQUESTS_TIMEOUT })
-        .then(() => true)
-        .catch(() => false)
-    }) )
-    .then((isAccessible) => {
+        return got(PAGE_TO_BE_TESTED, { timeout: REQUESTS_TIMEOUT })
+          .then(() => true)
+          .catch(() => false)
+      })
+
+      const numberOfProxies = proxies.length
+
+      return { isAccessible, numberOfProxies}
+    })
+    .then(({isAccessible, numberOfProxies}) => {
       global.GLOBAL_AGENT.HTTP_PROXY = ''
-      const result = {country, isAccessible}
+      const result = {country, isAccessible, numberOfProxies}
 
       console.debug(result)
       return result
