@@ -4,7 +4,7 @@ import getAllProxiesFromCountry from './get-all-proxies-from-contry.mjs'
 import { someLimit, mapSeries } from 'async';
 
 const PAGE_TO_BE_TESTED = 'http://portaldatransparencia.gov.br/'
-const REQUESTS_TIMEOUT = 5000
+const REQUESTS_TIMEOUT = 60000
 const MAX_CONCURRENT_REQUESTS = 20
 const COUNTRIES_LIST = [
   'br',
