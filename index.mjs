@@ -40,9 +40,10 @@ mapSeries(COUNTRIES_LIST, async (country) =>
     .then(async ({isAccessible, numberOfProxies}) => {
       global.GLOBAL_AGENT.HTTP_PROXY = ''
       const result = {country, isAccessible, numberOfProxies}
+      const resultAsString = JSON.stringify(result)
 
       console.debug(result)
-      await appendFile('output.txt', result, 'utf-8')
+      await appendFile('output.txt', `${resultAsString}\n`, 'utf-8')
       return result
     })
 )
