@@ -23,8 +23,8 @@ const COUNTRIES_LIST = [
 bootstrap()
 mapSeries(COUNTRIES_LIST, async (country) =>
   getAllProxiesFromCountry(country)
-    .then( (proxies) => {
-      const isAccessible = someLimit(proxies, MAX_CONCURRENT_REQUESTS, async ({ipAddress, port}) => {
+    .then(async (proxies) => {
+      const isAccessible = await someLimit(proxies, MAX_CONCURRENT_REQUESTS, async ({ipAddress, port}) => {
         global.GLOBAL_AGENT.HTTP_PROXY = `http://${ipAddress}:${port}`
         console.debug(`trying country ${country}: ${global.GLOBAL_AGENT.HTTP_PROXY}`)
 
@@ -37,7 +37,7 @@ mapSeries(COUNTRIES_LIST, async (country) =>
 
       return { isAccessible, numberOfProxies}
     })
-    .then(({isAccessible, numberOfProxies}) => {
+    .then(async ({isAccessible, numberOfProxies}) => {
       global.GLOBAL_AGENT.HTTP_PROXY = ''
       const result = {country, isAccessible, numberOfProxies}
 
