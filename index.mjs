@@ -5,8 +5,8 @@ import { appendFile } from 'fs/promises'
 import getAllProxiesFromCountry from './get-all-proxies-from-contry.mjs'
 
 const PAGE_TO_BE_TESTED = 'http://portaldatransparencia.gov.br/'
-const REQUESTS_TIMEOUT = 60000
-const MAX_CONCURRENT_REQUESTS = 20
+const REQUESTS_TIMEOUT = 10000
+const MAX_CONCURRENT_REQUESTS = 30
 const COUNTRIES_LIST = [
   'AD',
   'AE',
