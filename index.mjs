@@ -2,6 +2,7 @@ import got from 'got'
 import { bootstrap } from 'global-agent'
 import { someLimit, mapSeries } from 'async';
 import { appendFile } from 'fs/promises'
+import { backOff } from 'exponential-backoff'
 import getAllProxiesFromCountry from './get-all-proxies-from-contry.mjs'
 
 const PAGE_TO_BE_TESTED = 'http://portaldatransparencia.gov.br/'
@@ -261,7 +262,7 @@ const COUNTRIES_LIST = [
 
 bootstrap()
 mapSeries(COUNTRIES_LIST, async (country) =>
-  getAllProxiesFromCountry(country)
+  backOff(() => getAllProxiesFromCountry(country), { numOfAttempts: 100 })
     .then(async (proxies) => {
       const isAccessible = await someLimit(proxies, MAX_CONCURRENT_REQUESTS, async ({ipAddress, port}) => {
         global.GLOBAL_AGENT.HTTP_PROXY = `http://${ipAddress}:${port}`
