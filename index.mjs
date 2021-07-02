@@ -6,8 +6,8 @@ import { backOff } from 'exponential-backoff'
 import getAllProxiesFromCountry from './get-all-proxies-from-contry.mjs'
 
 const PAGE_TO_BE_TESTED = 'http://portaldatransparencia.gov.br/'
-const REQUESTS_TIMEOUT = 10000
-const MAX_CONCURRENT_REQUESTS = 30
+const REQUESTS_TIMEOUT = 6000
+const MAX_CONCURRENT_REQUESTS = 100
 const COUNTRIES_LIST = [
   'AD',
   'AE',
