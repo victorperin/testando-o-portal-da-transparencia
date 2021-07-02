@@ -9,6 +9,7 @@ on:
 
 jobs:
   Run:
+    runs-on: ubuntu-latest
     steps:
       - name: Begin Check...
         uses: actions/checkout@v2
