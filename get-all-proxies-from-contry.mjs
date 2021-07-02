@@ -1,10 +1,10 @@
-import ProxyLists from 'proxy-lists';
+import proxyLists from 'proxy-lists';
 
+let proxies = []
 
-export default (country) => new Promise((resolve, reject) => {
-  let proxies = [];
-  ProxyLists.getProxies({
-    countries: [country],
+export const findProxies = () => new Promise((resolve, reject) => {
+  let tempProxies = []
+  proxyLists.getProxies({
     protocols: [ 'http' ],
     sourcesBlackList: [ // not working proxy sites
       'blackhatworld',
@@ -30,8 +30,15 @@ export default (country) => new Promise((resolve, reject) => {
   })
     .on('data', (newProxies) => {
       console.log(`got proxies from ${newProxies[0].source}`)
-      proxies = [...proxies, ...newProxies]
+      tempProxies = [...tempProxies, ...newProxies]
     })
     .on('error', reject)
-    .once('end', () => resolve(proxies) )
+    .once('end', () => {
+      proxies = tempProxies
+      console.log(`got ${proxies.length} proxies from around de world`)
+      resolve(proxies)
+    })
 })
+
+export const getAllProxiesFromCountry = async (wantedCountry) =>
+  proxies.filter(({ country }) => country === wantedCountry.toLowerCase())
