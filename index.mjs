@@ -1,7 +1,7 @@
 import got from 'got'
 import { bootstrap } from 'global-agent'
 import { someLimit, mapSeries } from 'async';
-import { appendFile } from 'fs/promises'
+import { writeFile } from 'fs/promises'
 import { backOff } from 'exponential-backoff'
 import { findProxies, getAllProxiesFromCountry } from './get-all-proxies-from-contry.mjs'
 
@@ -283,11 +283,11 @@ mapSeries(COUNTRIES_LIST, async (country) =>
     .then(async ({isAccessible, numberOfProxies}) => {
       global.GLOBAL_AGENT.HTTP_PROXY = ''
       const result = {country, isAccessible, numberOfProxies}
-      const resultAsString = JSON.stringify(result)
 
       console.debug(result)
-      await appendFile('output.json', `${resultAsString}\n`, 'utf-8')
       return result
     })
 )
-    .then(console.log)
+    .then((result) =>
+      writeFile('output.json', JSON.stringify(result, null, 2) + '\n')
+    )
