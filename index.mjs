@@ -286,7 +286,7 @@ mapSeries(COUNTRIES_LIST, async (country) =>
       const resultAsString = JSON.stringify(result)
 
       console.debug(result)
-      await appendFile('output.txt', `${resultAsString}\n`, 'utf-8')
+      await appendFile('output.json', `${resultAsString}\n`, 'utf-8')
       return result
     })
 )
