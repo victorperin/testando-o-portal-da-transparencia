@@ -20,6 +20,4 @@ Passo a passo do algoritmo:
 
 # Resultados
 
-De todos os testes que consegui fazer é sempre apenas o brasil onde esse site é acessível.
-
-![Imagem mostrando os resultados que obtive](./result.jpg)
+Todos os dias, uma action do github é executada, atualizando o arquivo [output.txt](./output.txt) com os resultados de todos os países.
