@@ -7,11 +7,11 @@
   {
     "country": "AE",
     "isAccessible": false,
-    "numberOfProxies": 1
+    "numberOfProxies": 2
   },
   {
     "country": "AF",
-    "isAccessible": false,
+    "isAccessible": true,
     "numberOfProxies": 7
   },
   {
@@ -27,12 +27,12 @@
   {
     "country": "AL",
     "isAccessible": false,
-    "numberOfProxies": 15
+    "numberOfProxies": 16
   },
   {
     "country": "AM",
-    "isAccessible": false,
-    "numberOfProxies": 4
+    "isAccessible": true,
+    "numberOfProxies": 5
   },
   {
     "country": "AO",
@@ -47,7 +47,7 @@
   {
     "country": "AR",
     "isAccessible": true,
-    "numberOfProxies": 179
+    "numberOfProxies": 181
   },
   {
     "country": "AS",
@@ -61,8 +61,8 @@
   },
   {
     "country": "AU",
-    "isAccessible": false,
-    "numberOfProxies": 656
+    "isAccessible": true,
+    "numberOfProxies": 677
   },
   {
     "country": "AW",
@@ -92,7 +92,7 @@
   {
     "country": "BD",
     "isAccessible": true,
-    "numberOfProxies": 144
+    "numberOfProxies": 145
   },
   {
     "country": "BE",
@@ -142,7 +142,7 @@
   {
     "country": "BO",
     "isAccessible": false,
-    "numberOfProxies": 13
+    "numberOfProxies": 14
   },
   {
     "country": "BQ",
@@ -152,7 +152,7 @@
   {
     "country": "BR",
     "isAccessible": true,
-    "numberOfProxies": 436
+    "numberOfProxies": 441
   },
   {
     "country": "BS",
@@ -187,7 +187,7 @@
   {
     "country": "CA",
     "isAccessible": true,
-    "numberOfProxies": 73
+    "numberOfProxies": 74
   },
   {
     "country": "CC",
@@ -226,8 +226,8 @@
   },
   {
     "country": "CL",
-    "isAccessible": false,
-    "numberOfProxies": 50
+    "isAccessible": true,
+    "numberOfProxies": 52
   },
   {
     "country": "CM",
@@ -236,13 +236,13 @@
   },
   {
     "country": "CN",
-    "isAccessible": false,
-    "numberOfProxies": 97
+    "isAccessible": true,
+    "numberOfProxies": 91
   },
   {
     "country": "CO",
     "isAccessible": true,
-    "numberOfProxies": 201
+    "numberOfProxies": 206
   },
   {
     "country": "CR",
@@ -276,13 +276,13 @@
   },
   {
     "country": "CZ",
-    "isAccessible": false,
-    "numberOfProxies": 23
+    "isAccessible": true,
+    "numberOfProxies": 22
   },
   {
     "country": "DE",
     "isAccessible": true,
-    "numberOfProxies": 287
+    "numberOfProxies": 290
   },
   {
     "country": "DJ",
@@ -301,7 +301,7 @@
   },
   {
     "country": "DO",
-    "isAccessible": false,
+    "isAccessible": true,
     "numberOfProxies": 21
   },
   {
@@ -312,7 +312,7 @@
   {
     "country": "EC",
     "isAccessible": true,
-    "numberOfProxies": 118
+    "numberOfProxies": 121
   },
   {
     "country": "EE",
@@ -336,8 +336,8 @@
   },
   {
     "country": "ES",
-    "isAccessible": true,
-    "numberOfProxies": 38
+    "isAccessible": false,
+    "numberOfProxies": 37
   },
   {
     "country": "ET",
@@ -346,7 +346,7 @@
   },
   {
     "country": "FI",
-    "isAccessible": false,
+    "isAccessible": true,
     "numberOfProxies": 5
   },
   {
@@ -372,7 +372,7 @@
   {
     "country": "FR",
     "isAccessible": true,
-    "numberOfProxies": 158
+    "numberOfProxies": 165
   },
   {
     "country": "GA",
@@ -382,7 +382,7 @@
   {
     "country": "GB",
     "isAccessible": false,
-    "numberOfProxies": 52
+    "numberOfProxies": 55
   },
   {
     "country": "UK",
@@ -397,7 +397,7 @@
   {
     "country": "GE",
     "isAccessible": false,
-    "numberOfProxies": 11
+    "numberOfProxies": 12
   },
   {
     "country": "GF",
@@ -441,7 +441,7 @@
   },
   {
     "country": "GR",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 4
   },
   {
@@ -466,13 +466,13 @@
   },
   {
     "country": "GY",
-    "isAccessible": false,
-    "numberOfProxies": 0
+    "isAccessible": true,
+    "numberOfProxies": 1
   },
   {
     "country": "HK",
     "isAccessible": false,
-    "numberOfProxies": 41
+    "numberOfProxies": 37
   },
   {
     "country": "HM",
@@ -481,13 +481,13 @@
   },
   {
     "country": "HN",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 24
   },
   {
     "country": "HR",
     "isAccessible": false,
-    "numberOfProxies": 12
+    "numberOfProxies": 15
   },
   {
     "country": "HT",
@@ -496,13 +496,13 @@
   },
   {
     "country": "HU",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 9
   },
   {
     "country": "ID",
     "isAccessible": true,
-    "numberOfProxies": 655
+    "numberOfProxies": 669
   },
   {
     "country": "IE",
@@ -522,7 +522,7 @@
   {
     "country": "IN",
     "isAccessible": true,
-    "numberOfProxies": 541
+    "numberOfProxies": 553
   },
   {
     "country": "IO",
@@ -537,7 +537,7 @@
   {
     "country": "IR",
     "isAccessible": false,
-    "numberOfProxies": 39
+    "numberOfProxies": 34
   },
   {
     "country": "IS",
@@ -546,8 +546,8 @@
   },
   {
     "country": "IT",
-    "isAccessible": true,
-    "numberOfProxies": 28
+    "isAccessible": false,
+    "numberOfProxies": 31
   },
   {
     "country": "JE",
@@ -561,27 +561,27 @@
   },
   {
     "country": "JO",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 1
   },
   {
     "country": "JP",
-    "isAccessible": false,
-    "numberOfProxies": 32
+    "isAccessible": true,
+    "numberOfProxies": 36
   },
   {
     "country": "KE",
     "isAccessible": false,
-    "numberOfProxies": 13
+    "numberOfProxies": 14
   },
   {
     "country": "KG",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 1
   },
   {
     "country": "KH",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 54
   },
   {
@@ -606,7 +606,7 @@
   },
   {
     "country": "KR",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 20
   },
   {
@@ -621,7 +621,7 @@
   },
   {
     "country": "KZ",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 27
   },
   {
@@ -631,7 +631,7 @@
   },
   {
     "country": "LB",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 6
   },
   {
@@ -647,7 +647,7 @@
   {
     "country": "LK",
     "isAccessible": false,
-    "numberOfProxies": 1
+    "numberOfProxies": 2
   },
   {
     "country": "LR",
@@ -656,13 +656,13 @@
   },
   {
     "country": "LS",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 1
   },
   {
     "country": "LT",
     "isAccessible": false,
-    "numberOfProxies": 6
+    "numberOfProxies": 5
   },
   {
     "country": "LU",
@@ -672,7 +672,7 @@
   {
     "country": "LV",
     "isAccessible": false,
-    "numberOfProxies": 5
+    "numberOfProxies": 4
   },
   {
     "country": "LY",
@@ -691,7 +691,7 @@
   },
   {
     "country": "MD",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 9
   },
   {
@@ -736,8 +736,8 @@
   },
   {
     "country": "MO",
-    "isAccessible": false,
-    "numberOfProxies": 0
+    "isAccessible": true,
+    "numberOfProxies": 1
   },
   {
     "country": "MP",
@@ -761,7 +761,7 @@
   },
   {
     "country": "MT",
-    "isAccessible": false,
+    "isAccessible": true,
     "numberOfProxies": 1
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "country": "MW",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 3
   },
   {
@@ -787,7 +787,7 @@
   {
     "country": "MY",
     "isAccessible": false,
-    "numberOfProxies": 12
+    "numberOfProxies": 13
   },
   {
     "country": "MZ",
@@ -801,7 +801,7 @@
   },
   {
     "country": "NC",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 1
   },
   {
@@ -817,27 +817,27 @@
   {
     "country": "NG",
     "isAccessible": false,
-    "numberOfProxies": 28
+    "numberOfProxies": 32
   },
   {
     "country": "NI",
-    "isAccessible": false,
-    "numberOfProxies": 4
+    "isAccessible": true,
+    "numberOfProxies": 5
   },
   {
     "country": "NL",
-    "isAccessible": true,
-    "numberOfProxies": 38
+    "isAccessible": false,
+    "numberOfProxies": 41
   },
   {
     "country": "NO",
     "isAccessible": false,
-    "numberOfProxies": 13
+    "numberOfProxies": 14
   },
   {
     "country": "NP",
     "isAccessible": false,
-    "numberOfProxies": 21
+    "numberOfProxies": 22
   },
   {
     "country": "NR",
@@ -861,13 +861,13 @@
   },
   {
     "country": "PA",
-    "isAccessible": false,
+    "isAccessible": true,
     "numberOfProxies": 3
   },
   {
     "country": "PE",
-    "isAccessible": true,
-    "numberOfProxies": 40
+    "isAccessible": false,
+    "numberOfProxies": 39
   },
   {
     "country": "PF",
@@ -881,18 +881,18 @@
   },
   {
     "country": "PH",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 24
   },
   {
     "country": "PK",
     "isAccessible": false,
-    "numberOfProxies": 46
+    "numberOfProxies": 47
   },
   {
     "country": "PL",
-    "isAccessible": true,
-    "numberOfProxies": 67
+    "isAccessible": false,
+    "numberOfProxies": 66
   },
   {
     "country": "PM",
@@ -906,13 +906,13 @@
   },
   {
     "country": "PR",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 4
   },
   {
     "country": "PS",
-    "isAccessible": false,
-    "numberOfProxies": 17
+    "isAccessible": true,
+    "numberOfProxies": 18
   },
   {
     "country": "PT",
@@ -942,7 +942,7 @@
   {
     "country": "RO",
     "isAccessible": false,
-    "numberOfProxies": 15
+    "numberOfProxies": 17
   },
   {
     "country": "RS",
@@ -952,16 +952,16 @@
   {
     "country": "RU",
     "isAccessible": true,
-    "numberOfProxies": 437
+    "numberOfProxies": 442
   },
   {
     "country": "RW",
     "isAccessible": true,
-    "numberOfProxies": 53
+    "numberOfProxies": 55
   },
   {
     "country": "SA",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 6
   },
   {
@@ -986,8 +986,8 @@
   },
   {
     "country": "SG",
-    "isAccessible": true,
-    "numberOfProxies": 59
+    "isAccessible": false,
+    "numberOfProxies": 61
   },
   {
     "country": "SH",
@@ -1056,8 +1056,8 @@
   },
   {
     "country": "SY",
-    "isAccessible": true,
-    "numberOfProxies": 4
+    "isAccessible": false,
+    "numberOfProxies": 5
   },
   {
     "country": "SZ",
@@ -1087,7 +1087,7 @@
   {
     "country": "TH",
     "isAccessible": true,
-    "numberOfProxies": 178
+    "numberOfProxies": 190
   },
   {
     "country": "TJ",
@@ -1106,7 +1106,7 @@
   },
   {
     "country": "TM",
-    "isAccessible": false,
+    "isAccessible": true,
     "numberOfProxies": 1
   },
   {
@@ -1122,7 +1122,7 @@
   {
     "country": "TR",
     "isAccessible": true,
-    "numberOfProxies": 125
+    "numberOfProxies": 126
   },
   {
     "country": "TT",
@@ -1136,18 +1136,18 @@
   },
   {
     "country": "TW",
-    "isAccessible": false,
-    "numberOfProxies": 12
+    "isAccessible": true,
+    "numberOfProxies": 14
   },
   {
     "country": "TZ",
-    "isAccessible": true,
-    "numberOfProxies": 5
+    "isAccessible": false,
+    "numberOfProxies": 6
   },
   {
     "country": "UA",
     "isAccessible": true,
-    "numberOfProxies": 130
+    "numberOfProxies": 136
   },
   {
     "country": "UG",
@@ -1162,7 +1162,7 @@
   {
     "country": "US",
     "isAccessible": true,
-    "numberOfProxies": 2106
+    "numberOfProxies": 2134
   },
   {
     "country": "UY",
@@ -1187,7 +1187,7 @@
   {
     "country": "VE",
     "isAccessible": true,
-    "numberOfProxies": 45
+    "numberOfProxies": 47
   },
   {
     "country": "VG",
@@ -1232,16 +1232,16 @@
   {
     "country": "ZA",
     "isAccessible": false,
-    "numberOfProxies": 57
+    "numberOfProxies": 55
   },
   {
     "country": "ZM",
     "isAccessible": false,
-    "numberOfProxies": 2
+    "numberOfProxies": 3
   },
   {
     "country": "ZW",
-    "isAccessible": true,
+    "isAccessible": false,
     "numberOfProxies": 4
   }
 ]
